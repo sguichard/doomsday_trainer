@@ -1,15 +1,14 @@
 doomsday_trainer
 ================
 
-A simple Python program for testing your ability to calculate the day of the
-week for any date using the Doomsday Algorithm. To learn more about the
-algorithm see: 
+A simple Python program for testing your ability to mentally calculate 
+the day of the week for any date using the Doomsday Algorithm. To learn 
+more about the algorithm see: 
 
 http://en.wikipedia.org/wiki/Doomsday_rule
 
-The main feature of the program is that when you guess incorrectly, the program
-will walk you through the algorithm so that you can determine where you
-errored.
+The main feature is that when you guess incorrectly, the program will walk 
+you through the algorithm to show you where things went awry.
 
 The program picks dates at random, but you are more likely to see dates in
 nearby years.
