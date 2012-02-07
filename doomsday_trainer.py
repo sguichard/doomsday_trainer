@@ -11,16 +11,17 @@ def ordinal(beg,end):
 def random_date():
 #return a random date, with preference to nearby dates
     rand = random.random()
+    this_year = datetime.datetime.now().year
     if rand < 0.1:
-        return ordinal(1700,2100)
+        return ordinal(1700,2200)
     elif rand < 0.2:
-        return ordinal(1700,2100)
+        return ordinal(1900,2100)
     elif rand < 0.4:
-        return ordinal(1950,2020)
+        return ordinal(this_year - 50, this_year + 20)
     elif rand < 0.6:
-        return ordinal(2008,2012)
+        return ordinal(this_year - 2, this_year + 1)
     else:
-        return ordinal(2011,2011)
+        return ordinal(this_year, this_year)
 
 def not_leap(year):
     if year%100==0:
